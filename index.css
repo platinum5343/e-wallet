@@ -12,6 +12,15 @@
 html {
   font-size: 62.5%;
 }
+body{
+  width: 100%;
+}
+
+@media only screen and (max-width: 613) {
+  body {
+    display: flex;
+  }
+}
 
 @media only screen and (max-width: 68.75em) {
   html {
@@ -186,6 +195,9 @@ header .ewalletLogo h1 {
   font-size: 1.6rem;
 }
 
+
+
+
 .add {
   padding: 14px;
   border-bottom: 1px solid #e7e7e7;
@@ -249,8 +261,23 @@ header .ewalletLogo h1 {
 }
 
 @media (max-width: 700px) {
+  
   .add__value {
     width: 9.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .add__container {
+    width: 70%;
+    align-items: center;
+   justify-content: space-evenly;
+
+}
+}
+@media (max-width: 700px) {
+  .add__description
+  {
+    width: 20rem;
   }
 }
 
