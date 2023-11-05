@@ -2,7 +2,7 @@
 
 function getFormattedTime(){
 
-  const now = new Date().toLocaleDateString('en-us',{
+  const now = new Date("2023/05/06 00:00:00").toLocaleDateString('en-us',{
   month: 'short',
   day: 'numeric',
   hour: '2-digit',
