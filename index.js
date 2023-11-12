@@ -2,16 +2,12 @@
 
 function getFormattedTime(){
 
-  const now = new Date("2023/05/06 00:00:00").toLocaleDateString('en-us',{
-  month: 'short',
-  day: 'numeric',
-  hour: '2-digit',
-  minute: '2-digit',
-});
+ 
+  var dateString = "2023-11-12 00:00:00";
+  var now = new Date(dateString.replace(/-/g, "/"));
+ 
 
-const date = now.split(',')[0].split(' ');
-const time = now.split(',')[1];
-return `${date[1]} ${date[0]},${time} `;
+return now;
 
 }
 
@@ -20,7 +16,7 @@ return `${date[1]} ${date[0]},${time} `;
 document.querySelector('#ewallet-form').addEventListener('submit',function
 (e){
     e.preventDefault();
-
+ 
     console.log('form submitted');
 
     const type = document.querySelector('.add__type').value;
